@@ -1,0 +1,100 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 2.4rem; }
+
+#menu-bar {
+  width: 100%;
+  height: 5rem;
+  background-color: #397ecf;
+  position: relative; }
+  #menu-bar h1 {
+    position: absolute;
+    display: block;
+    color: #fff;
+    left: 1.4rem;
+    top: 1.2rem; }
+  #menu-bar ul {
+    float: right;
+    font-size: 1.8rem; }
+    #menu-bar ul li {
+      display: inline-block;
+      height: 5rem;
+      border-left: 1px solid #2e68ac;
+      margin: 0;
+      padding: 0; }
+      #menu-bar ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5rem;
+        margin: 0;
+        padding: 0 1.2rem;
+        color: #fff;
+        text-decoration: none; }
+        #menu-bar ul li a:hover {
+          background-color: #6698d2; }
+
+.content {
+  width: 90vw;
+  margin: 4rem auto; }
+  .content input {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2rem; }
+  .content ul li {
+    width: 100%; }
+
+span {
+  display: block;
+  float: right; }
+
+/*# sourceMappingURL=main.css.map */
