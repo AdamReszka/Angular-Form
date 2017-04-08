@@ -1,8 +1,15 @@
-var myNinjaApp = angular.module('myNinjaApp', []);
+var myNinjaApp = angular.module('myNinjaApp', ['ngRoute']);
+
+myNinjaApp.config(['$routeProvider', function($routeProvider){
+
+  $routeProvider
+    .when('/home', {
+
+    });
+}]);
 
 myNinjaApp.controller('NinjaController', ['$scope', function($scope){
 
-  $scope.message = "udało się";
 
   $scope.removeNinja = function(ninja){
     var removedNinja = $scope.ninjas.indexOf(ninja);
