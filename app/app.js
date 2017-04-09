@@ -14,6 +14,10 @@ myNinjaApp.config(['$routeProvider', function($routeProvider){
     });
 }]);
 
+myNinjaApp.config(['$locationProvider', function($locationProvider) {
+  $locationProvider.hashPrefix('');
+}]);
+
 myNinjaApp.controller('NinjaController', ['$scope', function($scope){
 
 
