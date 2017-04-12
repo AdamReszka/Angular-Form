@@ -18,7 +18,7 @@ myNinjaApp.config(['$locationProvider', function($locationProvider) {
   $locationProvider.hashPrefix('');
 }]);
 
-myNinjaApp.controller('NinjaController', ['$scope', function($scope){
+myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $http){
 
 
   $scope.removeNinja = function(ninja){
@@ -37,33 +37,13 @@ myNinjaApp.controller('NinjaController', ['$scope', function($scope){
     $scope.newNinja.name = "";
     $scope.newNinja.belt = "";
     $scope.newNinja.rate = "";
+    console.log($scope.ninjas);
   };
 
-  $scope.ninjas = [
-    {
-      name: "Yoshi",
-      belt: "Green",
-      rate: 50,
-      available: true
-    },
-    {
-      name: "Crystal",
-      belt: "Yellow",
-      rate: 30,
-      available: true
-    },
-    {
-      name: "Ryu",
-      belt: "Orange",
-      rate: 10,
-      available: false
-    },
-    {
-      name: "Shaun",
-      belt: "Black",
-      rate: 1000,
-      available: true
-    }
-  ];
+
+$http.get('data/ninjas.json').then(function(response){
+  $scope.ninjas = response.data;
+});
+
 
 }]);
