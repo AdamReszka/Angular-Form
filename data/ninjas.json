@@ -2,20 +2,24 @@
 	"name": "Yoshi",
 	"belt": "Green",
 	"rate": 50,
-	"available": true
+	"available": true,
+	"thumb": "img/yoshi.jpg"
 }, {
 	"name": "Crystal",
 	"belt": "Yellow",
 	"rate": 30,
-	"available": true
+	"available": true,
+	"thumb": "img/crystal.jpg"
 }, {
 	"name": "Ryu",
 	"belt": "Orange",
 	"rate": 10,
-	"available": false
+	"available": true,
+	"thumb": "img/ryu.jpg"
 }, {
 	"name": "Shaun",
 	"belt": "Black",
 	"rate": 1000,
-	"available": true
+	"available": true,
+	"thumb": "img/shaun.jpg"
 }]
