@@ -126,4 +126,9 @@ img {
   margin: 0;
   float: left; }
 
+.rand-hom {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 /*# sourceMappingURL=main.css.map */
