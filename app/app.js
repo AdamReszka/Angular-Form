@@ -4,7 +4,8 @@ myNinjaApp.config(['$routeProvider', function($routeProvider){
 
   $routeProvider
     .when('/home', {
-      templateUrl: 'views/home.html'
+      templateUrl: 'views/home.html',
+      controller: 'NinjaController'
     })
     .when('/directory', {
       templateUrl: 'views/directory.html',
@@ -16,6 +17,20 @@ myNinjaApp.config(['$routeProvider', function($routeProvider){
 
 myNinjaApp.config(['$locationProvider', function($locationProvider) {
   $locationProvider.hashPrefix('');
+}]);
+
+myNinjaApp.directive('randomNinja', [function(){
+
+  return {
+    restrict: 'E',
+    scope: {
+      ninjas: '=',
+      title: '='
+    },
+    template: '{{title}}',
+    controller: function($scope){}
+  };
+
 }]);
 
 myNinjaApp.controller('NinjaController', ['$scope', '$http', function($scope, $http){
